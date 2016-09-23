@@ -1,0 +1,42 @@
+body{
+    background-color: #4F7C8B;
+    width: 100%;
+}
+
+.container{
+    background-color: #EBF0F3;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+    height: auto;
+    padding: 30px;
+    border-radius: 4px;
+    border: 2px solid #A0AAB2;
+}
+
+h1{
+    margin-top: 0;
+    padding-bottom: 20px;
+    color: #6B8BAD;
+    text-align: center;
+    font-family: 'Yatra One', cursive;
+    border-bottom: 1px solid #CBD3DA;
+}
+
+form > p{
+    margin-bottom: 0;
+    font-family: 'Yatra One', cursive;
+    font-weight: 500;
+}
+
+button{
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+input{
+    border-radius: 2px;
+    border: 1px solid #CBD3DA;
+    font-size: 15px;
+}
