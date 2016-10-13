@@ -33,10 +33,38 @@ button{
     padding: 5px;
     margin-top: 10px;
     border-radius: 3px;
+    border: 1px solid #4F7C8B;
+    background-color: #4F7C8B;
+    color: white;
+    font-size: 14px;
 }
 
 input{
     border-radius: 2px;
     border: 1px solid #CBD3DA;
     font-size: 15px;
+}
+
+.back-to-main{
+    position: relative;
+    clear: both;
+    text-align: center;
+    top: 30px;
+    margin-bottom: 20px;
+}
+.back-to-main > a{
+    text-decoration: none;
+    color: #d40000;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.back-to-main > a:hover{
+    color: white;
+    background-color: red;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius: 5px;
 }
