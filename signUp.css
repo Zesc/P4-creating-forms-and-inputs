@@ -1,47 +1,53 @@
 body{
-    background-color: #4F7C8B;
+    background-color: #0097D3;
     width: 100%;
 }
 
 .container{
-    background-color: #EBF0F3;
+    background-color: #FDFFFC;
     margin-left: 35%;
     margin-right: 35%;
     margin-top: 5%;
     height: auto;
     padding: 30px;
     border-radius: 4px;
-    border: 2px solid #A0AAB2;
+    border: 2px solid #FDFFFC;
 }
 
 h1{
     margin-top: 0;
     padding-bottom: 20px;
-    color: #6B8BAD;
+    color: #63EDDB;
     text-align: center;
     font-family: 'Yatra One', cursive;
-    border-bottom: 1px solid #CBD3DA;
-}
-
-form > p{
-    margin-bottom: 0;
-    font-family: 'Yatra One', cursive;
-    font-weight: 500;
+    border-bottom: 1px solid #CCFEF4;
 }
 
 button{
-    padding: 5px;
+    padding: 5px 45px 5px 45px;
     margin-top: 10px;
     border-radius: 3px;
-    border: 1px solid #4F7C8B;
-    background-color: #4F7C8B;
-    color: white;
-    font-size: 14px;
+    border: 1px solid #7CC6FE;
+    background-color: #7CC6FE;
+    color: #CCFEF4;
+    font-size: 20px;
+    margin-left: 30%;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+p{
+    margin: 5px 0 5px 0;
+    text-align: right;
+    padding-right: 70px;
 }
 
 input{
     border-radius: 2px;
-    border: 1px solid #CBD3DA;
+    border: 1px solid #CCFEF4;
     font-size: 15px;
 }
 
@@ -62,9 +68,17 @@ input{
 }
 
 .back-to-main > a:hover{
-    color: white;
+    color: #CCFEF4;
     background-color: red;
-    -webkit-border-radius:;
-    -moz-border-radius:;
     border-radius: 5px;
 }
+
+span{
+    color: #63EDDB;
+    text-align: right;
+}
+
+#dob{
+    text-align: center;
+}
+

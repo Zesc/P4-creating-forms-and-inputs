@@ -5,24 +5,51 @@
     <meta name="Project 4" content="create a signup form">
     <link href="signUp.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+    <link href="validator.js" rel="script">
     <title>Project 4: Creating Forms and Inputs</title>
 </head>
 <body>
     <div class="container">
         <h1>Signup Form</h1>
-        <form>
-            <p>FIRST NAME</p>
-            <input type="text" name="first_name">
-            <p>LAST NAME</p>
-            <input type="text" name="last_name">
-            <p>EMAIL</p>
-            <input type="text" name="email">
-            <p>DATE OF BIRTH</p>
-            <input type="date" name="dob">
-            <p>PASSWORD</p>
-            <input type="password" name="password">
-            <br />
-            <button type="submit" value="text" name="submit">Submit</button>
+        <form id="signUp">
+            <p>
+            <label for="name">
+            <span>First Name:</span>
+            <input type="text" name="firstname" id="name">
+            </label>
+            </p>
+
+            <p>
+            <label for="lname">
+            <span>Last Name:</span>
+            <input id="lname" type="text" name="lastname">
+            </label>
+            </p>
+
+            <p>
+            <label for="email">
+            <span>Email:</span>
+            <input id="email" type="text" name="email">
+            </label>
+            </p>
+
+            <p>
+            <label for="dob">
+            <span>Date Of Birth:</span>
+            <input id="dob" type="date" name="dateofbirth">
+            </label>
+            </p>
+
+            <p>
+            <label for="pass">
+            <span>Password:</span>
+            <input id="pass" type="password" name="password">
+            </label>
+            </p>
+
+            <button id="submit" type="submit" name="submit">
+                Submit
+            </button>
         </form>
     </div>
     <div class="back-to-main">
