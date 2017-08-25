@@ -23,13 +23,12 @@ h1{
 
 button{
     padding: 5px 45px 5px 45px;
-    margin-top: 10px;
     border-radius: 3px;
     border: 1px solid rgb(61, 157, 179);
     background: rgb(61, 157, 179);
     color: #fff;
     font-size: 20px;
-    margin-left: 30%;
+    margin: 5% 60%;
 }
 
 button:hover{
@@ -75,7 +74,7 @@ div.content div.container form div {
 }
 
 div.content div.container form {
-    margin-right: 50px;
+    right: 20%;
     position: relative;
     top: 15px;
 }
