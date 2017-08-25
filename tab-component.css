@@ -1,0 +1,52 @@
+div.tabs{ 
+  position: relative;   
+  height: 450px; /* This part sucks */
+  clear: both;
+  margin: 35px 0 0 30px;
+  background: white;
+}  
+
+div.tab input[type='radio'] {
+  display: none;
+}
+
+div.tab{
+  float: left;
+}
+
+div.tab label{
+  position: relative;
+  top: -20px;
+  padding: 10px;
+  font-size: 25px;
+  border: 2px solid #928b99;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  color: #3f3f3f;
+}
+
+div.content{
+  position: absolute;
+  top: 19px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 2px solid #928b99; 
+  -webkit-transition: opacity .4s linear;
+  opacity: 0;
+  width: 50%;
+  height: auto;
+  background-color: #fcfcfc;
+}
+
+div.tab input[type='radio']:checked ~ label{
+  color: #fff;
+  background: #000;
+  border-radius: 5px  5px 0 0;
+}
+
+div.tab input[type='radio']:checked  ~ .content{
+ opacity: 1; 
+}

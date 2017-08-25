@@ -2,58 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Project 4" content="create a signup form">
-    <link href="signUp.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
-    <link href="validator.js" rel="script">
+    <meta name="Project 4: Sign Up" content="create a sign up form">
+    <link href="signUp.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="tab-component.css">
     <title>Project 4: Creating Forms and Inputs</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Signup Form</h1>
-        <form id="signUp">
-            <p>
-            <label for="name">
-            <span>First Name:</span>
-            <input type="text" name="firstname" id="name">
-            </label>
-            </p>
+    <div class="tabs">
+        <div class="tab">
+            <input id="signup" type="radio" name="signup" checked>
+            <label for="signup">Signup Form</label>
 
-            <p>
-            <label for="lname">
-            <span>Last Name:</span>
-            <input id="lname" type="text" name="lastname">
-            </label>
-            </p>
+            <div class="content">
+                <div class="container">
+                    <h1>Signup Form</h1>
+                    <form id="signUp">
+                        <div>
+                        <input type="text" name="firstname" id="name">
+                        <label for="name">First Name:</label>
+                        </div>
+                   
+                        <div>    
+                        <input id="lname" type="text" name="lastname">
+                        <label for="lname">Last Name:</label>
+                        </div>
+                    
+                        <div>
+                        <input id="email" type="text" name="email">
+                        <label for="email">Email:</label>
+                        </div>
 
-            <p>
-            <label for="email">
-            <span>Email:</span>
-            <input id="email" type="text" name="email">
-            </label>
-            </p>
+                        <div>
+                        <input id="dob" type="date" name="dateofbirth">
+                        <label for="dob">Date Of Birth:</label>
+                        </div>
 
-            <p>
-            <label for="dob">
-            <span>Date Of Birth:</span>
-            <input id="dob" type="date" name="dateofbirth">
-            </label>
-            </p>
+                        <div>
+                        <input id="pass" type="password" name="password">
+                        <label for="pass">Password:</label>
+                        </div>
 
-            <p>
-            <label for="pass">
-            <span>Password:</span>
-            <input id="pass" type="password" name="password">
-            </label>
-            </p>
-
-            <button id="submit" type="submit" name="submit">
-                Submit
-            </button>
-        </form>
+                        <button id="submit" type="submit" name="submit">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="back-to-main">
-        <a href="https://zesc.github.io/P1-Multi-Page-Website/">BACK TO MAIN PAGE</a>
-    </div>
+    
+    <script type="text/javascript" src="validator.js"></script>
 </body>
 </html>
