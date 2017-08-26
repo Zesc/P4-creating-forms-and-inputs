@@ -1,10 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,500');
-
-body{
-    width: 100%;
-}
-
 .container{
     display: block;
     width: 100%;   
@@ -12,32 +5,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
+#signup-title {
+    font-family: 'Roboto', sans-serif;
     margin-top: 0;
     padding-bottom: 10px;
     text-align: center;
-    font-weight: 500;
-    border-bottom: 1px solid rgb(61, 157, 179);
-    color: rgb(61, 157, 179);
-}
-
-button{
-    padding: 5px 45px 5px 45px;
-    border-radius: 3px;
-    border: 1px solid rgb(61, 157, 179);
-    background: rgb(61, 157, 179);
-    color: #fff;
-    font-size: 20px;
-    margin: 5% 60%;
-}
-
-button:hover{
-    cursor: pointer;
-    background: rgb(74, 179, 198);
-}
-
-#dob{
-    padding-left: 17px;
+    font-weight: 400;
+    color: #11bfff;
 }
 
 .my-invalid{
@@ -49,32 +23,50 @@ button:hover{
     background: #B7F0D0;
 }
 
-div.content div.container form div input {
-    float: right;
+div.content div.container form div .input-signup {
     border-radius: 4px;
-    border: 1px solid #3f3f3f;
+    border: none;
     color: #3f3f3f;
     font-size: 16px;
-    padding-left: 5px;
-    margin-top: -9px;
+    padding: 5px;
+    margin-top: -10px;
+    margin-left: 7px;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
 }
 
 div.content div.container form div label {
     border: none;
-    color: #3f3f3f;
-    float: right;
+    color: #11bfff;
     padding: 8px;
-    position: relative;
+    position: static;
+    display: block;
+    font-weight: 300;
+    font-size: 15px;
 }
 
 div.content div.container form div {
-    clear: both;
     width: 100%;
     height: auto;
 }
 
 div.content div.container form {
-    right: 20%;
-    position: relative;
     top: 15px;
+}
+
+div.content div.container form button[type='submit'] {
+    padding: 5px 45px 5px 45px;
+    border-radius: 3px;
+    border: 1px solid rgb(61, 157, 179);
+    background: rgb(61, 157, 179);
+    color: #fff;
+    font-size: 20px;
+    margin-top: 70px;
+    float: right;
+}
+
+div.content div.container form button:hover {
+    cursor: pointer;
+    background: rgb(74, 179, 198);
 }

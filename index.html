@@ -3,49 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Project 4: Sign Up" content="create a sign up form">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link href="signUp.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="tab-component.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
     <title>Project 4: Creating Forms and Inputs</title>
+    <script src="https://use.fontawesome.com/b82532ac96.js"></script>
 </head>
 <body>
     <div class="tabs">
         <div class="tab">
-            <input id="signup" type="radio" name="signup" checked>
+            <input id="signup" type="radio" name="tab" checked>
             <label for="signup">Signup Form</label>
 
             <div class="content">
                 <div class="container">
-                    <h1>Signup Form</h1>
+                    <h1 id='signup-title'>Signup Form</h1>
                     <form id="signUp">
                         <div>
-                        <input type="text" name="firstname" id="name">
-                        <label for="name">First Name:</label>
+                        <label for="name">First Name</label>
+                        <input class="input-signup" type="text" name="firstname" id="name">
                         </div>
                    
                         <div>    
-                        <input id="lname" type="text" name="lastname">
-                        <label for="lname">Last Name:</label>
+                        <label for="lname">Last Name</label>
+                        <input class="input-signup" id="lname" type="text" name="lastname">
                         </div>
                     
                         <div>
-                        <input id="email" type="text" name="email">
-                        <label for="email">Email:</label>
+                        <label for="email">Email</label>
+                        <input class="input-signup" id="email" type="text" name="email">
                         </div>
 
                         <div>
-                        <input id="dob" type="date" name="dateofbirth">
-                        <label for="dob">Date Of Birth:</label>
+                        <label for="dob">Date Of Birth</label>
+                        <input class="input-signup" id="dob" type="date" name="dateofbirth">
                         </div>
 
                         <div>
-                        <input id="pass" type="password" name="password">
-                        <label for="pass">Password:</label>
+                        <label for="pass">Password</label>
+                        <input class="input-signup" id="pass" type="password" name="password">
                         </div>
 
                         <button id="submit" type="submit" name="submit">
-                            Submit
+                            SUBMIT
                         </button>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab">
+            <input id='login' type="radio" name="tab">
+            <label for='login'>Signin Form</label>
+
+            <div class="content">
+                <div class="log-container">
+                    <h1 id='login-title'>Login</h1>
+                    <div class="user_container">
+                        <input class='input-login' type="text" placeholder="User name">
+                        <i id='input_icon' class="fa fa-user-circle" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="pass_container">
+                        <input class='input-login' type="password" placeholder="Password">
+                        <i id='input_icon' class="fa fa-lock" aria-hidden="true"></i>
+                    </div>
+
+                    <button id='b-login' type="button" name="login">
+                        Login
+                    </button>
+
+                    <div id="forgot">
+                        <a href="#">Forgot password?</a>
+                    </div>
                 </div>
             </div>
         </div>
