@@ -1,6 +1,7 @@
 //working on validation form for sing up form
 var sForm = document.getElementById("signUp");
 var bSubmit = document.getElementById('submit');
+var btnLogin = document.getElementById('b-login')
 // var name = document.getElementById('name');
 
 // Helper functions
@@ -106,34 +107,29 @@ sForm.addEventListener('submit', function(event){
 	if(isValidPass(pass.value)) {
 		pass.className = 'my-valid';
 	}else {
-		pass.setCustomValidity("Please enter a password of at least 6 to 8 characters long");
+		pass.setCustomValidity("Please enter a password of at least 6 to 8 characters long.");
 		pass.className = 'my-invalid';
 	}	
 
 }); 
 
-sForm.addEventListener('click', function(){
-	// var name = document.getElementById('name');
-	// var lname = document.getElementById('lname');
-	// var list = [name, lname];
+btnLogin.addEventListener('click', function(event) {
+	var userName = document.getElementById('u-name');
+	var userPass = document.getElementById('u-pass');
 
-	// for (var i=0; i<list.length; i++){
-	// 	if(i.value === ''){
-	// 		name.className = 'my-invalid';
-	// 		name.setCustomValidity("Please, fill provide information.");	  	    		
-	// 	}else{
-	// 	name.className = 'my-valid';
-	// 	name.setCustomValidity('');
-	// 	}
-	// }
-	// if(name.value === ''){
-	// 	name.className = 'my-invalid';
-	// 	name.setCustomValidity("Please, fill provide information.");	  	    		
-	// }
-	// else{
-	// 	name.className = 'my-valid';
-	// 	name.setCustomValidity('');
-	// }
+	if( isEmpty(userName.value)) {
+		userName.className = 'signing-invalid';
+		userName.setCustomValidity('Please input your user name');
+	} else {
+		userName.className = 'signing-valid';
+	}
+
+	if(isValidPass(userPass.value)) {
+		userPass.className = 'signing-valid';
+	}else {
+		userPass.className = 'signing-invalid';
+		userPass.setCustomValidity('Please enter a password of at least 6 to 8 characters long.')
+	}
 });
 
 
